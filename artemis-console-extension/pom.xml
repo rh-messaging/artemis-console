@@ -47,7 +47,7 @@
                 <version>${frontend-maven-plugin-version}</version>
                 <configuration>
                     <workingDirectory>${extension.path}</workingDirectory>
-                    <installDirectory>${extension.install.dir}</installDirectory>
+                    <installDirectory>/tmp/tools</installDirectory>
                 </configuration>
                 <executions>
                     <execution>
