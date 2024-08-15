@@ -44,7 +44,7 @@
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
         <maven.compiler.release>11</maven.compiler.release>
-        <hawtio.version>4.2.0</hawtio.version>
+        <hawtio.version>4.0.0.redhat-00072</hawtio.version>
         <jakarta.servlet-api.version>5.0.0</jakarta.servlet-api.version>
         <slf4j.version>2.0.12</slf4j.version>
         <log4j.version>2.22.1</log4j.version>
@@ -218,6 +218,8 @@
                             <exclude>**/yarn.lock</exclude>
                             <exclude>**/artemis-extension/build/**</exclude>
                             <exclude>artemis-console-extension/artemis-extension/yarn.lock</exclude>
+                            <!-- we add this as the prod build has to create a .yarnrc.yml-->
+                            <exclude>**/.yarnrc.yml</exclude>
                         </excludes>
                     </configuration>
                 </plugin>
