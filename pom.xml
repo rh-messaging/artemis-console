@@ -218,6 +218,7 @@
                                     <!-- Yarn -->
                                     <exclude>**/.yarn/**</exclude>
                                     <exclude>**/yarn.lock</exclude>
+                                    <exclude>**/.yarnrc.yml</exclude>
                                     <exclude>**/artemis-extension/build/**</exclude>
                                     <exclude>artemis-console-extension/artemis-extension/yarn.lock</exclude>
                                 </excludes>
