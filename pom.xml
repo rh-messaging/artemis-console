@@ -218,6 +218,8 @@
                                     <!-- Yarn -->
                                     <exclude>**/.yarn/**</exclude>
                                     <exclude>**/yarn.lock</exclude>
+                                    <!-- we add this as the prod build has to create a .yarnrc.yml-->
+                                    <exclude>**/.yarnrc.yml</exclude>
                                     <exclude>**/artemis-extension/build/**</exclude>
                                     <exclude>artemis-console-extension/artemis-extension/yarn.lock</exclude>
                                 </excludes>
