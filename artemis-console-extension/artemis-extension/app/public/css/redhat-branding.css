@@ -1,0 +1,187 @@
+/*
+ * Licensed to the Apache Software Foundation (ASF) under one or more
+ * contributor license agreements.  See the NOTICE file distributed with
+ * this work for additional information regarding copyright ownership.
+ * The ASF licenses this file to You under the Apache License, Version 2.0
+ * (the "License"); you may not use this file except in compliance with
+ * the License.  You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+/* You can customise the styles of your application here. */
+
+
+.pf-c-login,
+.pf-c-about-modal-box__hero {
+  background-image: url("../img/background.svg") !important;
+  background-size: cover;
+}
+
+.pf-topology__node.artemisBroker.pf-m-info .pf-topology__node__background {
+  stroke:  var(--artemis-diag-broker-border);
+  stroke-width: 3;
+  fill: var(--artemis-diag-broker-color);
+}
+
+.pf-topology__node__label.artemisBrokerLabel {
+  & > rect {
+    stroke: var(--artemis-diag-broker-border);
+  }
+
+  .pf-topology__node__label__badge {
+    & > rect {
+      stroke: var(--artemis-diag-broker-border);
+      fill:  var(--artemis-diag-broker-color);
+    }
+    & > text {
+      fill: var(--artemis-diag-broker-label-text);
+    }
+  }
+}
+
+.pf-topology__node.artemisBackupBroker.pf-m-info .pf-topology__node__background {
+  stroke:  var(--artemis-diag-backup-broker-border);
+  stroke-width: 3;
+  fill: var(--artemis-diag-backup-broker-color);
+}
+
+.pf-topology__node__label.artemisBackupBrokerLabel {
+  & > rect {
+    stroke: var(--artemis-diag-backup-broker-border);
+  }
+
+  .pf-topology__node__label__badge {
+    & > rect {
+      stroke: var(--artemis-diag-backup-broker-border);
+      fill:  var(--artemis-diag-backup-broker-color);
+    }
+    & > text {
+      fill: var(--artemis-diag-backup-broker-label-text);
+    }
+  }
+}
+
+.pf-topology__node.artemisAddress.pf-m-info .pf-topology__node__background {
+  stroke:  var(--artemis-diag-address-border);
+  stroke-width: 3;
+  fill: var(--artemis-diag-address-color);
+  & > rect {
+    stroke: var(--artemis-diag-address-border);
+    fill:  var(--artemis-diag-address-color);
+  }
+}
+
+.pf-topology__node__label.artemisAddressLabel {
+  & > rect {
+    stroke: var(--artemis-diag-address-border);
+  }
+
+  .pf-topology__node__label__badge {
+    & > rect {
+      stroke: var(--artemis-diag-address-border);
+      fill:  var(--artemis-diag-address-color);
+    }
+    & > text {
+      fill: var(--artemis-diag-address-label-text);
+    }
+  }
+
+}
+
+.pf-topology__node.artemisQueue.pf-m-info .pf-topology__node__background {
+  stroke:  var(--artemis-diag-queue-border);
+  stroke-width: 3;
+  fill: var(--artemis-diag-queue-color);
+}
+
+.pf-topology__node__label.artemisQueueLabel {
+  & > rect {
+    stroke: var(--artemis-diag-queue-border);
+  }
+
+   .pf-topology__node__label__badge {
+    & > rect {
+      stroke: var(--artemis-diag-queue-border);
+      fill:  var(--artemis-diag-queue-color);
+    }
+    & > text {
+      fill:var(--artemis-diag-queue-label-text);
+    }
+  }
+}
+
+.pf-topology__node.artemisInternalAddress.pf-m-info .pf-topology__node__background {
+  stroke:  var(--artemis-diag-internal-address-border);
+  stroke-width: 3;
+  fill:  var(--artemis-diag-internal-address-color);
+}
+
+.pf-topology__node__label.artemisInternalAddressLabel {
+  & > rect {
+    stroke: var(--artemis-diag-internal-address-border);
+  }
+
+  .pf-topology__node__label__badge {
+    & > rect {
+      stroke: var(--artemis-diag-internal-address-border);
+      fill:  var(--artemis-diag-internal-address-color);
+    }
+    & > text {
+      fill: var(--artemis-diag-internal-address-label-text);
+    }
+  }
+}
+
+.pf-topology__node.artemisInternalQueue.pf-m-info .pf-topology__node__background {
+  stroke:  var(--artemis-diag-internal-queue-border);
+  stroke-width: 3;
+  fill: var(--artemis-diag-internal-queue-color);
+}
+
+.pf-topology__node__label.artemisInternalQueueLabel {
+  & > rect {
+    stroke: var(--artemis-diag-internal-queue-border);
+  }
+  .pf-topology__node__label__badge {
+    & > rect {
+      stroke: var(--artemis-diag-internal-queue-border);
+      fill:  var(--artemis-diag-internal-queue-color);
+    }
+    & > text {
+      fill: var(--artemis-diag-internal-queue-label-text);
+    }
+  }
+}
+
+:root {
+  --artemis-diag-broker-color: #06c;
+  --artemis-diag-broker-border:#004080;
+  --artemis-diag-broker-label-text:#fff;
+  --artemis-diag-backup-broker-color: #73bcf7;
+  --artemis-diag-backup-broker-border:#2b9af3;
+  --artemis-diag-backup-broker-label-text:#fff;
+  --artemis-diag-address-color: #6ca100;
+  --artemis-diag-address-border:#486b00;
+  --artemis-diag-address-label-text:#fff;
+  --artemis-diag-queue-color: #a18fff;
+  --artemis-diag-queue-border:#8476d1;
+  --artemis-diag-queue-label-text:#fff;
+  --artemis-diag-internal-address-color: #fff;
+  --artemis-diag-internal-address-border:#486b00;
+  --artemis-diag-internal-address-label-text:#000;
+  --artemis-diag-internal-queue-color: #fff;
+  --artemis-diag-internal-queue-border:#8476d1;
+  --artemis-diag-internal-queue-label-text:#000;
+  /** icon inside broker diagram */
+  --pf-v5-topology__node--Color: var(--artemis-global--primary-color--100)
+}
+
+.pf-v5-theme-dark {
+  --pf-v5-chart-donut--label--title--Fill: var(--artemis-diag-broker-label-text);
+}
