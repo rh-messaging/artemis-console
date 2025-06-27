@@ -44,12 +44,12 @@
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <maven.compiler.release>17</maven.compiler.release>
-        <hawtio.version>4.6.2</hawtio.version>
+        <hawtio.version>4.3.0.redhat-00011</hawtio.version>
         <jakarta.servlet-api.version>5.0.0</jakarta.servlet-api.version>
         <slf4j.version>2.0.17</slf4j.version>
         <log4j.version>2.25.3</log4j.version>
         <jolokia-integration-artemis.version>0.8.0</jolokia-integration-artemis.version>
-        <jolokia.version>2.4.3</jolokia.version>
+        <jolokia.version>2.4.3.redhat-00001</jolokia.version>
         <jetty-version>12.1.4</jetty-version>
         <corepack-version>0.34.0</corepack-version>
         <node-version>v22.17.1</node-version>
@@ -244,6 +244,8 @@
                             <exclude>**/tsconfig.json</exclude>
                             <exclude>**/artemis-extension/app/build/**</exclude>
                             <exclude>**/artemis-extension/packages/artemis-console-plugin/dist/**</exclude>
+                            <!-- we add this as the prod build has to create a .yarnrc.yml-->
+                            <exclude>**/.yarnrc.yml</exclude>
                         </excludes>
                     </configuration>
                 </plugin>
