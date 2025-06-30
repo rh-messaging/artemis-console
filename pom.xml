@@ -217,6 +217,8 @@
                             <exclude>**/tsconfig.json</exclude>
                             <exclude>**/artemis-extension/app/build/**</exclude>
                             <exclude>**/artemis-extension/packages/artemis-console-plugin/dist/**</exclude>
+                            <!-- we add this as the prod build has to create a .yarnrc.yml-->
+                            <exclude>**/.yarnrc.yml</exclude>
                         </excludes>
                     </configuration>
                 </plugin>
