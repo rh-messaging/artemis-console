@@ -181,3 +181,7 @@
   /** icon inside broker diagram */
   --pf-v5-topology__node--Color: var(--artemis-global--primary-color--100)
 }
+
+.pf-v5-theme-dark {
+  --pf-v5-chart-donut--label--title--Fill: var(--artemis-diag-broker-label-text);
+}
