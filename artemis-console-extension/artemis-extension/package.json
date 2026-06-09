@@ -33,7 +33,8 @@
     "tough-cookie": "5.1.2",
     "webpack": "5.102.1",
     "word-wrap": "1.2.5",
-    "ws": "8.18.3"
+    "ws": "8.18.3",
+    "ip-address": "10.1.1"
   },
   "eslintConfig": {
     "extends": [
