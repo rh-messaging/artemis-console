@@ -52,7 +52,7 @@
         <jolokia.version>2.4.2</jolokia.version>
         <jetty-version>11.0.24</jetty-version>
         <corepack-version>0.34.0</corepack-version>
-        <node-version>v22.17.1</node-version>
+        <node-version>v22.23.1</node-version>
         <yarn-version>v4.9.2</yarn-version>
         <frontend-maven-plugin-version>1.15.1</frontend-maven-plugin-version>
         <project.build.outputTimestamp>2025-11-05T08:04:56Z</project.build.outputTimestamp>
