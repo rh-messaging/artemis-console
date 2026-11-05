@@ -159,6 +159,12 @@
                 <groupId>io.hawt</groupId>
                 <artifactId>hawtio-system</artifactId>
                 <version>${hawtio.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>org.jolokia</groupId>
+                        <artifactId>jolokia-service-jsr160</artifactId>
+                    </exclusion>
+                </exclusions>
             </dependency>
 
             <!-- Servlet API is provided by the container -->
